@@ -1,0 +1,6 @@
+-XX:+UnlockCommercialFeatures
+-XX:+FlightRecorder
+-XX:+UnlockDiagnosticVMOptions
+-XX:+DebugNonSafepoints
+-XX:StartFlightRecording=defaultrecording=true,settings
+-XX:FlightRecorderOptions=defaultrecording=true,settings='profiling/default.jfc'loglevel=info,dumponexit=true,dumponexitpath='profiling/result.jfr'

@@ -58,5 +58,8 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 
+## Profiling
+*.jfr
+
 ## OS Specific
 .DS_Store
