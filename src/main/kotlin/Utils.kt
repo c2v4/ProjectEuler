@@ -7,3 +7,4 @@ val isMultipleOf = { multiple: Int, number: Int -> isMultiple(multiple, number) 
 internal fun isPrime(n: Int) = (2..(n / 2)).none { divisor: Int -> isMultiple(divisor, n) }
 internal fun isMultiple(multiple: Int, number: Int) = number % multiple == 0
 internal fun isMultiple(multiple: Long, number: Long) = number % multiple == 0L
+internal fun sqrt(n:Int) = Math.sqrt(n.toDouble()).toInt()
