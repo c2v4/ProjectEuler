@@ -4,6 +4,8 @@ infix fun <P> ((P) -> Boolean).and(f: ((P) -> Boolean)) = { arg: P -> this(arg) 
 val isLongMultipleOf = { multiple: Long, number: Long -> number % multiple == 0L }
 val isMultipleOf = { multiple: Int, number: Int -> isMultiple(multiple, number) }
 
+fun String.asResource() = Thread.currentThread().contextClassLoader.getResource(this).readText()
+
 internal fun isPrime(n: Int) = (2..(n / 2)).none { divisor: Int -> isMultiple(divisor, n) }
 internal fun isMultiple(multiple: Int, number: Int) = number % multiple == 0
 internal fun isMultiple(multiple: Long, number: Long) = number % multiple == 0L
